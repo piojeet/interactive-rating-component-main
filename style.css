@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@200&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Overpass:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body{
+    background-color: var(--neutral-Very-Dark-Blue);
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+:root{
+    --primary:hsl(25, 97%, 53%);
+
+    --neutral-Light-Grey: hsl(217, 12%, 63%);
+    --neutral-Medium-Grey: hsl(216, 12%, 54%);
+    --neutral-Dark-Blue: hsl(213, 19%, 18%);
+    --neutral-Very-Dark-Blue: hsl(216, 12%, 8%);
+
+    --Font-size-paragraph: 15px;
+
+    --font-family: 'Overpass', sans-serif;
+}
+
+.card,
+.thank-you{
+    width: 412px;
+    height: 416px;
+    border-radius: 30px;
+    background:radial-gradient(98.96% 98.96% at 50.00% 0%, #232A34 0%, #181E27 100%);
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    display: none;
+}
+
+.card img{
+    padding: 16px;
+    border-radius: 50%;
+    background-color: #262E38;
+    align-self: flex-start;
+}
+
+.card h1{
+    font-size: 28px;
+    color: white;
+    margin: 30px 0 7px;
+    align-self: flex-start;
+}
+
+.card p{
+    color: var(--neutral-Light-Grey);
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.card .buttons{
+    display: flex;
+    gap: 22px;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.card .buttons button{
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--neutral-Dark-Blue);
+    color: #7C8798;
+    font-family: 'Overpass', sans-serif;
+}
+
+.card .buttons button.selected{
+    background-color: var(--neutral-Light-Grey);
+    color: white;
+}
+
+.card .buttons button:hover{
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+}
+
+.card form{
+    width: 100%;
+}
+
+.card .btn-submit{
+    width: 348px;
+    height: 51px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--primary);
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Overpass', sans-serif;
+}
+
+.card .btn-submit:hover{
+    background-color: white;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.thank-you{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.thank-you img{
+    margin-top: 45px;
+    margin-bottom: 36px;
+}
+
+
+.thank-you span{
+    color: var(--primary);
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--neutral-Dark-Blue);
+    padding: 4px 20px;
+    border-radius: 22.5px;
+    margin-bottom: 32px;
+}
+
+.thank-you h3{
+    color: white;
+    padding-bottom: 7px;
+    font-weight: 700;
+}
+
+.thank-you p{
+    text-align: center;
+    color: var(--neutral-Light-Grey);
+    font-weight: 400;
+    font-size: 15px;
+    width: 340px;
+}
+
+.active {
+    display: flex;
+}
+
+
+.attribution {
+    color: var(--neutral-Light-Grey);
+}
+
+.attribution a {
+    color: var(--primary);
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 440px) {
+
+.thank-you{
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+}
+
+.card .btn-submit {
+    width: 100%;
+}
+
+.card .buttons{
+    display: flex;
+    gap: .5rem;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.card .buttons button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--neutral-Dark-Blue);
+    color: #7C8798;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    padding: 1rem;
+}
+
+.thank-you p {
+    width: 100%;
+}
+
+#selection {
+    text-align: center;
+}
+
+}
